@@ -1,0 +1,57 @@
+#categories {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    height: 120px;
+    background-color: white;
+    margin-top: 15px;
+    font-family: sans-serif;
+    width: 65%;
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#categories>div>img {
+    height: 70px;
+    width: 60px;
+    background-color: white;
+}
+
+#categories>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+
+#categories>div>p {
+    padding-top: 10px;
+}
+
+
+li {
+    list-style: none;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+.heading {
+    color: gray;
+}
+
+#carousel1 {
+    height: auto;
+    width: 1600px;
+    margin-top: 50px;
+    margin-left: 55px;
+}
