@@ -12,6 +12,12 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
     </title>
+    <style>
+        #container1 .MkhHNl p {
+            line-height: 5px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -57,11 +63,8 @@
             </div>
         </section>
 
-        <section>
-            
-        </section>
+        <section id="container2"></section>
     </main>
-
     <footer>
         <div id="container1"></div>
     </footer>
@@ -75,6 +78,10 @@
     $( function ()
     {
         $( "#container1" ).load( './footer.html' );
+    } );
+    $( function ()
+    {
+        $( "#container2" ).load( './Products.html' );
     } );
 </script>
 <script src="./public/javascripts/index.js"></script>
