@@ -29,9 +29,9 @@ function Signin ()
                 alert( "Invalid Password" );
                 break;
             }
-            else (mobileno != userDetails[ i ].mobileno && password != userDetails[ i ].password)
+            else if (mobileno != userDetails[ i ].mobileno && password != userDetails[ i ].password)
             {
-                alert( "User doesn't Exits" )
+                alert( "User doesn't Exist" )
                 window.location.href = "signup.html";
                 break;
             }

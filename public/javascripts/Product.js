@@ -47,7 +47,7 @@ let sample_data = [
         price: "5578",
         actualprice: "10,399"
     },
-    , {
+    {
         Brand: "Arrow",
         img_src: "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/s/4/f/-original-imagsfejwcyfa4yx.jpeg?q=70",
         names: "Men Slim Fit Self",

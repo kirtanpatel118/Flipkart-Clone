@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/stylesheet/Product.css">
     <link rel="shortcut icon" href="./public/images/flipkart_logo_transparent.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Product List</title>
+    <title>Products – Flipkart</title>
 </head>
 
 <body>
@@ -20,37 +17,40 @@
 
     <main>
         <section id="products">
-            <div style="width: 25%;height: 150px; border: 1px solid #696969; height: 100vh">
-              <p>Filters</p>
+            <div id="filter-sidebar">
+                <p>Filters</p>
+                <p style="font-size:13px;color:#878787;font-weight:normal;">Brand</p>
+                <label style="display:block;font-size:13px;padding:4px 0;"><input type="checkbox"> Arrow</label>
+                <label style="display:block;font-size:13px;padding:4px 0;"><input type="checkbox"> Puma</label>
+                <br>
+                <p style="font-size:13px;color:#878787;font-weight:normal;">Price Range</p>
+                <label style="display:block;font-size:13px;padding:4px 0;"><input type="checkbox"> Under ₹1,000</label>
+                <label style="display:block;font-size:13px;padding:4px 0;"><input type="checkbox"> ₹1,000 – ₹5,000</label>
+                <label style="display:block;font-size:13px;padding:4px 0;"><input type="checkbox"> Above ₹5,000</label>
             </div>
-            <div style="width: 75%; border:none ">
-              <div style="display: flex;" id="topmenu">
-                <span> Sort By </span>
-                <span> Popularity </span>
-                <span> Price -- Low to High </span>
-                <span> Price -- High to Low </span>
-              </div>
-              <div style="display: flex;align-items: center;margin-left: 45px;" id="collection"></div><br>
-              <div style="display: flex;align-items: center;margin-left: 45px;" id="collection2"></div>
+            <div id="right-content">
+                <div id="topmenu">
+                    <span>Sort By</span>
+                    <span>Popularity</span>
+                    <span>Price — Low to High</span>
+                    <span>Price — High to Low</span>
+                    <span>Newest First</span>
+                </div>
+                <div id="collection"></div>
+                <div id="collection2"></div>
             </div>
-          </section>
+        </section>
     </main>
 
     <footer>
         <div id="container1"></div>
     </footer>
 
+    <script>
+        $(function () { $("#container").load('./navbar.html'); });
+        $(function () { $("#container1").load('./footer.html'); });
+    </script>
+    <script src="./public/javascripts/Product.js"></script>
 </body>
-<script>
-    $( function ()
-    {
-        $( "#container" ).load( './navbar.html' );
-    } );
-    $( function ()
-    {
-        $( "#container1" ).load( './footer.html' );
-    } );
-</script>
-<script src="./public/javascripts/Product.js"></script>
 
 </html>
